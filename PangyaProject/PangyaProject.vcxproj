@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{B962011C-64DF-403A-8670-F7E6940B18E2}</ProjectGuid>
+    <RootNamespace>PangyaProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\TOP-OUTER\Desktop\PangyaProject\boost_1_67_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Users\TOP-OUTER\Desktop\PangyaProject\boost_1_67_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\TOP-OUTER\Desktop\PangyaProject\boost_1_67_0;C:\Users\TOP-OUTER\Desktop\PangyaProject\poco-1.9.0-all\Foundation\include;C:\Users\TOP-OUTER\Desktop\PangyaProject\poco-1.9.0-all\Data\include;C:\Users\TOP-OUTER\Desktop\PangyaProject\poco-1.9.0-all\Data\ODBC\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>POCO_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Users\TOP-OUTER\Desktop\PangyaProject\boost_1_67_0\stage\lib;C:\Users\TOP-OUTER\Desktop\PangyaProject\poco-1.9.0-all\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\TOP-OUTER\Desktop\PangyaProject\boost_1_67_0;C:\Users\TOP-OUTER\Desktop\PangyaProject\poco-1.9.0-all\Foundation\include;C:\Users\TOP-OUTER\Desktop\PangyaProject\poco-1.9.0-all\Data\include;C:\Users\TOP-OUTER\Desktop\PangyaProject\poco-1.9.0-all\Data\ODBC\include;C:\Users\TOP-OUTER\Desktop\PangyaProject\spdlog;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>POCO_STATIC;_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\TOP-OUTER\Desktop\PangyaProject\poco-1.9.0-all\lib;C:\Users\TOP-OUTER\Desktop\PangyaProject\boost_1_67_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\TOP-OUTER\Desktop\PangyaProject\boost_1_67_0;C:\Users\TOP-OUTER\Desktop\PangyaProject\poco-1.9.0-all\Foundation\include;C:\Users\TOP-OUTER\Desktop\PangyaProject\poco-1.9.0-all\Data\include;C:\Users\TOP-OUTER\Desktop\PangyaProject\poco-1.9.0-all\Data\ODBC\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>POCO_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\TOP-OUTER\Desktop\PangyaProject\poco-1.9.0-all\lib64;C:\Users\TOP-OUTER\Desktop\PangyaProject\boost_1_67_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="src\account.cpp" />
+    <ClCompile Include="src\channel.cpp" />
+    <ClCompile Include="src\clif.cpp" />
+    <ClCompile Include="src\common\db.cpp" />
+    <ClCompile Include="src\common\packet.cpp" />
+    <ClCompile Include="src\common\queue.cpp" />
+    <ClCompile Include="src\common\session.cpp" />
+    <ClCompile Include="src\common\socket.cpp" />
+    <ClCompile Include="src\common\unique.cpp" />
+    <ClCompile Include="src\crypto\crypto.cpp" />
+    <ClCompile Include="src\inventory.cpp" />
+    <ClCompile Include="src\inventory_additem.cpp" />
+    <ClCompile Include="src\itemdb.cpp" />
+    <ClCompile Include="src\pc.cpp" />
+    <ClCompile Include="src\pc_manager.cpp" />
+    <ClCompile Include="src\reader.cpp" />
+    <ClCompile Include="src\reader\ini.c" />
+    <ClCompile Include="src\reader\ini_reader.cpp" />
+    <ClCompile Include="src\shop.cpp" />
+    <ClCompile Include="src\utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\account.h" />
+    <ClInclude Include="src\channel.h" />
+    <ClInclude Include="src\clif.h" />
+    <ClInclude Include="src\common\asio.hpp" />
+    <ClInclude Include="src\common\consts.h" />
+    <ClInclude Include="src\common\db.h" />
+    <ClInclude Include="src\common\packet.h" />
+    <ClInclude Include="src\common\queue.h" />
+    <ClInclude Include="src\common\Semaphore.h" />
+    <ClInclude Include="src\common\session.h" />
+    <ClInclude Include="src\common\socket.h" />
+    <ClInclude Include="src\common\TimerQueue.h" />
+    <ClInclude Include="src\common\unique.h" />
+    <ClInclude Include="src\crypto\crypto.h" />
+    <ClInclude Include="src\exception.h" />
+    <ClInclude Include="src\inventory.h" />
+    <ClInclude Include="src\itemdb.h" />
+    <ClInclude Include="src\pc.h" />
+    <ClInclude Include="src\pc_manager.h" />
+    <ClInclude Include="src\reader.h" />
+    <ClInclude Include="src\reader\ini.h" />
+    <ClInclude Include="src\reader\ini_reader.h" />
+    <ClInclude Include="src\shop.h" />
+    <ClInclude Include="src\static.h" />
+    <ClInclude Include="src\struct.h" />
+    <ClInclude Include="src\typedef.h" />
+    <ClInclude Include="src\utils.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
